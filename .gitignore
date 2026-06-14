@@ -1,0 +1,13 @@
+# Ignore cache and logs
+application/cache/*
+!application/cache/index.html
+application/logs/*
+!application/logs/index.html
+
+# Ignore uploads
+public/images/uploads/*
+!public/images/uploads/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
