@@ -11,3 +11,10 @@ public/images/uploads/*
 # OS
 .DS_Store
 Thumbs.db
+
+# Large files (upload manually to cPanel)
+*.tar.gz
+*.zip
+public/pizza2.zip
+assets_upload.tar.gz
+images/pizza2/
