@@ -89,6 +89,7 @@
 <script>
     window.siteUrl = '<?= site_url() ?>';
 </script>
+<script src="<?= base_url('js/api-helper.js') ?>"></script>
 <script src="<?= base_url('js/app.js?v=3.1') ?>"></script>
 <script src="<?= base_url('js/scroll.js?v=3.1') ?>"></script>
 
