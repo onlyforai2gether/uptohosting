@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Menu - Pizza Azura</title>
-    <link rel="stylesheet" href="<?= base_url('assets/css/admin.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/admin.css') ?>">
 </head>
 <body>
 
 <div class="admin-shell">
     <header class="admin-header">
         <div class="brand-header">
-            <img src="<?= base_url('assets/images/logo.webp') ?>" alt="Azura Pizza Logo" class="brand-logo" onerror="this.style.display='none'">
+            <img src="<?= base_url('images/logo.webp') ?>" alt="Azura Pizza Logo" class="brand-logo" onerror="this.style.display='none'">
             <div>
                 <p class="brand-tag">Bakule Azura</p>
                 <h1>Kelola Menu Pizza</h1>
@@ -51,7 +51,7 @@
                     <?php $no = 1; foreach($pizza as $p): ?>
                     <tr>
                         <td><?= $no++ ?></td>
-                        <td><img src="<?= base_url('assets/images/'.$p->gambar) ?>" alt="<?= $p->nama_pizza ?>" class="table-image"></td>
+                        <td><img src="<?= base_url('images/'.$p->gambar) ?>" alt="<?= $p->nama_pizza ?>" class="table-image"></td>
                         <td><?= $p->nama_pizza ?></td>
                         <td><?= character_limiter($p->deskripsi, 80) ?></td>
                         <td>Rp <?= number_format($p->harga,0,',','.') ?></td>

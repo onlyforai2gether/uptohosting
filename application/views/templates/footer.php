@@ -1,7 +1,7 @@
 <footer id="footer" class="site-footer">
     <div class="footer-inner">
         <div class="footer-brand">
-            <img src="<?= base_url('public/images/logo.webp') ?>" alt="Azura Logo" class="footer-logo" onerror="this.style.display='none'">
+            <img src="<?= base_url('images/logo.webp') ?>" alt="Azura Logo" class="footer-logo" onerror="this.style.display='none'">
             <div>
                 <p>Freshly Baked</p>
                 <span>Est. 2020</span>
@@ -14,8 +14,8 @@
 <script>
     window.siteUrl = '<?= site_url() ?>';
 </script>
-<script src="<?= base_url('public/js/app.js') ?>"></script>
-<script src="<?= base_url('public/js/api-helper.js') ?>"></script>
+<script src="<?= base_url('js/app.js') ?>"></script>
+<script src="<?= base_url('js/api-helper.js') ?>"></script>
 
 </body>
 </html>

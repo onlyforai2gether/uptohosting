@@ -115,8 +115,8 @@ class Admin extends CI_Controller {
     {
         $pizza = $this->Pizza_model->getPizzaById($id);
         if($pizza) {
-            if($pizza->gambar && file_exists(FCPATH.'assets/images/'.$pizza->gambar)) {
-                @unlink(FCPATH.'assets/images/'.$pizza->gambar);
+            if($pizza->gambar && file_exists(FCPATH.'images/'.$pizza->gambar)) {
+                @unlink(FCPATH.'images/'.$pizza->gambar);
             }
             $this->Pizza_model->deletePizza($id);
         }
@@ -140,8 +140,8 @@ class Admin extends CI_Controller {
             return false;
         }
 
-        $config['upload_path'] = FCPATH.'assets/images/';
-        $config['allowed_types'] = 'gif|jpg|png|jpeg';
+        $config['upload_path'] = FCPATH.'images/';
+        $config['allowed_types'] = 'gif|jpg|png|jpeg|webp';
         $config['max_size'] = 2048;
         $config['encrypt_name'] = true;
 

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Orders - Pizza Azura</title>
-    <link rel="stylesheet" href="<?= base_url('assets/css/admin.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/admin.css') ?>">
 </head>
 <body>
 
 <div class="admin-shell">
     <header class="admin-header admin-header--small">
         <div class="brand-header">
-            <img src="<?= base_url('assets/images/logo.webp') ?>" alt="Azura Pizza Logo" class="brand-logo" onerror="this.style.display='none'">
+            <img src="<?= base_url('images/logo.webp') ?>" alt="Azura Pizza Logo" class="brand-logo" onerror="this.style.display='none'">
             <div>
                 <p class="brand-tag">Bakule Azura</p>
                 <h1>Data Pesanan</h1>

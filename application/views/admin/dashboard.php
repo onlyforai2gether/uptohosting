@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard - Pizza Azura</title>
-    <link rel="stylesheet" href="<?= base_url('assets/css/admin.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/admin.css') ?>">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
     <header class="page-header">
         <div class="brand-top">
             <div class="brand-icon">
-                <img src="<?= base_url('assets/images/logo.svg') ?>" alt="Azura Logo">
+                <img src="<?= base_url('images/logo.svg') ?>" alt="Azura Logo">
             </div>
             <div class="brand-copy">
                 <p class="brand-tag">Pizza Azzura Admin</p>
