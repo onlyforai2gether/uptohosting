@@ -15,8 +15,8 @@ class Pizza_model extends CI_Model {
                 'deskripsi' => ['type' => 'TEXT', 'null' => TRUE],
                 'gambar' => ['type' => 'VARCHAR', 'constraint' => 100, 'default' => 'pizza-default.webp'],
                 'stok' => ['type' => 'INT', 'constraint' => 11, 'default' => 0],
-                'created_at' => ['type' => 'TIMESTAMP', 'default' => 'CURRENT_TIMESTAMP'],
-                'updated_at' => ['type' => 'TIMESTAMP', 'default' => 'CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'],
+                'created_at' => ['type' => 'DATETIME', 'null' => TRUE],
+                'updated_at' => ['type' => 'DATETIME', 'null' => TRUE],
             ]);
             $this->dbforge->add_key('id', TRUE);
             $this->dbforge->create_table('pizzas');
@@ -33,13 +33,13 @@ class Pizza_model extends CI_Model {
 
     public function getAllPizza()
     {
-        $this->ensure_stock_column();
+        $this->ensure_table_and_stock();
         return $this->db->order_by('id', 'ASC')->get('pizzas')->result();
     }
 
     public function getPizzaById($id)
     {
-        $this->ensure_stock_column();
+        $this->ensure_table_and_stock();
         return $this->db->get_where('pizzas', ['id' => $id])->row();
     }
 
